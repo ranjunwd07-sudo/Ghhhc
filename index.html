@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldlife Edible Oil | Pure Health from Babbar Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-primary: #003366; 
+            --color-accent: #D4AF37; 
+            --color-gold-oil: #FFD700;
+        }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), 
+                        url('https://images.unsplash.com/photo-1474979266404-7eaacbadcbaf?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .oil-drop-card {
+            transition: all 0.4s ease;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .oil-drop-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--color-accent);
+            box-shadow: 0 20px 40px rgba(0, 51, 102, 0.1);
+        }
+
+        .official-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: white;
+            padding: 2px;
+            border: 2px solid var(--color-accent);
+        }
+
+        .bg-silk {
+            background-color: #fffaf0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="inter text-slate-800 bg-silk">
+
+    <!-- Header -->
+    <header class="bg-[#003366] text-white sticky top-0 z-50 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/u/0/d/1ze1cJXyrOLZggv6cE9a4YI96cXsxUk-B" class="official-logo" alt="Babbar Logo">
+                <div>
+                    <h1 class="cinzel text-xl md:text-2xl font-bold tracking-tight">Goldlife Oil</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-[#D4AF37]">Health in Every Drop</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex gap-8 items-center text-xs font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-[#D4AF37] transition">Our Story</a>
+                <a href="#benefits" class="hover:text-[#D4AF37] transition">Health Benefits</a>
+                <a href="#products" class="hover:text-[#D4AF37] transition">Products</a>
+                <button onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})" 
+                        class="bg-[#D4AF37] text-blue-950 px-6 py-2 rounded font-black hover:bg-white transition">
+                    Bulk Orders
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <div class="mb-6 flex justify-center">
+                <div class="p-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                    <i data-lucide="heart-pulse" class="w-10 h-10 text-[#D4AF37]"></i>
+                </div>
+            </div>
+            <h2 class="cinzel text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                Goldlife: The <span class="text-[#D4AF37]">Heart</span> of Your Kitchen
+            </h2>
+            <p class="text-lg md:text-2xl opacity-90 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                Triple-refined, nutrient-fortified, and physically processed to preserve the natural antioxidants your family deserves.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-[#D4AF37] text-blue-950 px-10 py-4 rounded font-bold cinzel hover:bg-white transition shadow-xl">Our Oil Range</a>
+                <a href="#benefits" class="border-2 border-white px-10 py-4 rounded font-bold cinzel hover:bg-white hover:text-blue-900 transition">Health Standards</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="text-[#D4AF37] cinzel font-bold tracking-[0.3em] uppercase text-sm mb-4 block">Quality & Discipline</span>
+                <h3 class="cinzel text-4xl font-extrabold text-blue-950 mb-6">Purity Proven by Action</h3>
+                <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                    Goldlife Edible Oil, a premium brand by the <strong>Babbar Group</strong>, was born from Chairman Mr. Raj Babbar Raj's vision to provide unadulterated, heart-healthy cooking mediums to the masses. We utilize state-of-the-art physical refining processes that avoid harsh chemicals, ensuring the oil retains its natural Vitamin E and Oryzanol content.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-[#D4AF37]">
+                        <i data-lucide="shield-check" class="text-blue-900"></i>
+                        <span class="font-bold text-sm">Triple Filtered Purity</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-[#D4AF37]">
+                        <i data-lucide="Zap" class="text-blue-900"></i>
+                        <span class="font-bold text-sm">Fortified with Vit A & D</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 relative">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#D4AF37] rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&q=80&w=1000" 
+                     class="rounded-3xl shadow-2xl border-[12px] border-white relative z-10" 
+                     alt="Healthy Cooking with Goldlife">
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits -->
+    <section id="benefits" class="bg-blue-950 py-24 px-4 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="cinzel text-4xl font-bold mb-4">Why Choose Goldlife?</h3>
+                <div class="w-24 h-1 bg-[#D4AF37] mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <div class="w-20 h-20 bg-[#D4AF37]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="thermometer-snowflake" class="text-[#D4AF37] w-10 h-10"></i>
+                    </div>
+                    <h4 class="cinzel text-xl font-bold mb-4">High Smoke Point</h4>
+                    <p class="text-sm opacity-70">Perfect for Indian deep-frying and high-heat cooking without breaking down into harmful compounds.</p>
+                </div>
+                <div class="text-center p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <div class="w-20 h-20 bg-[#D4AF37]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="activity" class="text-[#D4AF37] w-10 h-10"></i>
+                    </div>
+                    <h4 class="cinzel text-xl font-bold mb-4">Zero Cholesterol</h4>
+                    <p class="text-sm opacity-70">Clinically tested to be 100% cholesterol-free, supporting a healthy cardiovascular system.</p>
+                </div>
+                <div class="text-center p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <div class="w-20 h-20 bg-[#D4AF37]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="droplet" class="text-[#D4AF37] w-10 h-10"></i>
+                    </div>
+                    <h4 class="cinzel text-xl font-bold mb-4">Light & Non-Greasy</h4>
+                    <p class="text-sm opacity-70">Absorbs up to 20% less in food, ensuring your meals are light and easy to digest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Range -->
+    <section id="products" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="cinzel text-4xl font-bold text-center mb-16 text-blue-950">Our Premium Oils</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg oil-drop-card">
+                    <div class="h-64 bg-gradient-to-b from-[#FFF9E6] to-white flex items-center justify-center p-8">
+                        <img src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=400" class="h-full object-contain mix-blend-multiply" alt="Refined Sunflower Oil">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="cinzel text-2xl font-bold text-blue-900 mb-2">Refined Sunflower Oil</h4>
+                        <p class="text-sm text-gray-500 mb-6">Light, clear, and rich in Vitamin E. The ultimate choice for daily cooking and frying.</p>
+                        <div class="flex justify-between items-center pt-4 border-t">
+                            <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Available in 1L, 5L, 15L</span>
+                            <i data-lucide="arrow-right-circle" class="text-blue-900"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 (Mustard) -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg oil-drop-card border-2 border-[#D4AF37]">
+                    <div class="h-64 bg-gradient-to-b from-[#FFF3D1] to-white flex items-center justify-center p-8">
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60705a2f3a?auto=format&fit=crop&q=80&w=400" class="h-full object-contain mix-blend-multiply" alt="Kachi Ghani Mustard Oil">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="cinzel text-2xl font-bold text-blue-900 mb-2">Kachi Ghani Mustard Oil</h4>
+                        <p class="text-sm text-gray-500 mb-6">Cold-pressed to retain its pungent aroma and high nutritional value. Best for traditional Indian delicacies.</p>
+                        <div class="flex justify-between items-center pt-4 border-t">
+                            <span class="text-xs font-bold uppercase tracking-widest text-red-600">Pure & Pungent</span>
+                            <i data-lucide="arrow-right-circle" class="text-blue-900"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg oil-drop-card">
+                    <div class="h-64 bg-gradient-to-b from-[#E6F3FF] to-white flex items-center justify-center p-8">
+                        <img src="https://images.unsplash.com/photo-1589135233689-d95b8d27453d?auto=format&fit=crop&q=80&w=400" class="h-full object-contain mix-blend-multiply" alt="Refined Soyabean Oil">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="cinzel text-2xl font-bold text-blue-900 mb-2">Refined Soyabean Oil</h4>
+                        <p class="text-sm text-gray-500 mb-6">Rich in Omega-3 fatty acids and highly versatile. Great for baking, sautéing, and dressings.</p>
+                        <div class="flex justify-between items-center pt-4 border-t">
+                            <span class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">The Balanced Choice</span>
+                            <i data-lucide="arrow-right-circle" class="text-blue-900"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section id="inquiry" class="py-24 px-4 bg-blue-50">
+        <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-[#D4AF37]/30">
+            <div class="md:w-2/5 bg-[#003366] p-12 text-white flex flex-col justify-center">
+                <h3 class="cinzel text-3xl font-bold mb-6">Partner with the Best</h3>
+                <p class="opacity-70 text-sm mb-8 leading-relaxed">Join our extensive network of distributors and retailers across the country. Let's bring health to every home together.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone-call" class="text-[#D4AF37]"></i>
+                        <span>+91 9065919011</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="text-[#D4AF37]"></i>
+                        <span class="text-xs">ranjunwd07@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-3/5 p-12">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name" class="w-full border-b p-3 outline-none focus:border-blue-900 transition">
+                        <input type="tel" placeholder="Mobile Number" class="w-full border-b p-3 outline-none focus:border-blue-900 transition">
+                    </div>
+                    <select class="w-full border-b p-3 outline-none bg-transparent">
+                        <option>Dealership Inquiry</option>
+                        <option>Bulk Industrial Order</option>
+                        <option>Retail Feedback</option>
+                    </select>
+                    <textarea placeholder="Tell us about your requirements..." class="w-full border-b p-3 h-32 outline-none resize-none focus:border-blue-900 transition"></textarea>
+                    <button type="button" class="bg-blue-900 text-white w-full py-4 rounded-xl font-bold cinzel text-lg hover:bg-[#D4AF37] transition">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#003366] text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-white/10 pb-12 mb-12">
+                <div class="flex items-center gap-4">
+                    <img src="https://lh3.googleusercontent.com/u/0/d/1ze1cJXyrOLZggv6cE9a4YI96cXsxUk-B" class="w-16 h-16 bg-white p-1 rounded-full border-2 border-[#D4AF37]" alt="Goldlife Logo">
+                    <div>
+                        <p class="cinzel font-bold text-2xl tracking-tight">Goldlife Oil</p>
+                        <p class="text-[10px] uppercase opacity-60 tracking-widest">A Babbar Group Flagship</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 mt-8 md:mt-0">
+                    <a href="#" class="hover:text-[#D4AF37] transition font-bold text-xs uppercase tracking-widest">Facebook</a>
+                    <a href="#" class="hover:text-[#D4AF37] transition font-bold text-xs uppercase tracking-widest">Instagram</a>
+                    <a href="#" class="hover:text-[#D4AF37] transition font-bold text-xs uppercase tracking-widest">YouTube</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="text-[10px] opacity-40 uppercase tracking-[0.4em]">© 2025 Babbar Group FMCG Division. Quality and Discipline in Action.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+t quality long-grain rice exported and distributed across major retail hubs, maintaining traditional taste with modern packaging.",
+                action: { label: "Contact Sales", url: "#contact" },
+                icon: "package-check"
+            },
+            { 
+                id: 'sumangal',
+                name: "SUMANGALM GAS AGENCY", 
+                category: "Energy", 
+                desc: "LPG distribution ensuring safe and timely energy for homes and industries.",
+                longDesc: "A trusted energy partner for thousands, Sumangalm Gas provides efficient delivery networks for domestic and commercial LPG needs.",
+                action: { label: "Request Connection", url: "#contact" },
+                icon: "flame"
+            },
+            { 
+                id: 'fuel',
+                name: "RAHGIR FUEL STATION", 
+                category: "Energy", 
+                desc: "Strategically located multi-fuel convenience hubs for travelers.",
+                longDesc: "24/7 high-speed fuel dispensing and modern convenience stores across major highways, ensuring travelers always have a reliable stop.",
+                action: { label: "Find Locations", url: "#contact" },
+                icon: "fuel"
+            },
+            { 
+                id: 'vidhyut',
+                name: "VIDHYUT TRANSMISSION", 
+                category: "Infrastructure", 
+                desc: "Powering regional growth through electrical infrastructure development.",
+                longDesc: "High-voltage transmission line installation and substation management, contributing to the nation's energy security.",
+                action: { label: "Contracting Details", url: "#contact" },
+                icon: "zap"
+            },
+            { 
+                id: 'vedic',
+                name: "VEDIC HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Integrated wellness center combining modern diagnostics with Ayurveda.",
+                longDesc: "Vedic Hospital offers a holistic approach to healing, bridging the gap between ancient wisdom and modern clinical precision.",
+                action: { label: "Book Consultation", url: "#contact" },
+                icon: "heart-pulse"
+            },
+            { 
+                id: 'arogya',
+                name: "AROGYA HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Advanced multi-specialty surgical and diagnostic center.",
+                longDesc: "Specializing in emergency care and modern surgery, Arogya Hospital is equipped with the latest medical technology.",
+                action: { label: "Inquire Services", url: "#contact" },
+                icon: "stethoscope"
+            },
+            { 
+                id: 'swastik',
+                name: "SWASTIK HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Community healthcare facility focused on primary and pediatric care.",
+                longDesc: "Reliable family medicine and maternal health services located in urban centers for easy accessibility.",
+                action: { label: "Learn More", url: "#contact" },
+                icon: "activity"
+            },
+            { 
+                id: 'resonance',
+                name: "RESONANCE COMMERCIAL", 
+                category: "Real Estate", 
+                desc: "Premium A-grade office spaces and commercial complexes.",
+                longDesc: "Designing the skylines of tomorrow, Resonance Commercial develops sustainable and high-tech office environments.",
+                action: { label: "Leasing Inquiries", url: "#contact" },
+                icon: "building-2"
+            },
+            { 
+                id: 'hamper',
+                name: "HAMPER SPECIAL PURPOSE", 
+                category: "Real Estate", 
+                desc: "Logistics and special industrial infrastructure projects.",
+                longDesc: "Warehousing, cold storage, and specialized industrial parks tailored for large-scale operations.",
+                action: { label: "Project Details", url: "#contact" },
+                icon: "warehouse"
+            },
+            { 
+                id: 'sugun',
+                name: "SUGUN RESIDENTIAL", 
+                category: "Real Estate", 
+                desc: "Luxury and affordable housing projects for modern living.",
+                longDesc: "Sugun Residential focus on community, safety, and modern amenities in every housing society we develop.",
+                action: { label: "View Listings", url: "#contact" },
+                icon: "home"
+            }
+        ];
+
+        // UI Logic
+        function renderGrid() {
+            const container = document.getElementById('grid-container');
+            container.innerHTML = entities.map((e, idx) => `
+                <div onclick="showDetail('${e.id}')" class="company-card group cursor-pointer bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm ${e.flagship ? 'flagship-gradient lg:col-span-2' : ''}">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 ${e.flagship ? 'bg-white text-[#002D5B]' : 'bg-[#002D5B] text-[#C5A028]'} rounded-2xl flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+                            <i data-lucide="${e.icon}" class="w-7 h-7"></i>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${e.flagship ? 'bg-[#C5A028] text-[#002D5B]' : 'bg-slate-100 text-slate-500'} rounded-full">${e.category}</span>
+                    </div>
+                    <h3 class="cinzel text-xl md:text-2xl font-bold mb-3 ${e.flagship ? 'text-white' : 'text-[#002D5B]'} group-hover:text-[#C5A028] transition-colors">${e.name}</h3>
+                    <p class="${e.flagship ? 'text-white/80' : 'text-slate-500'} text-sm leading-relaxed mb-6">${e.desc}</p>
+                    <div class="flex items-center gap-2 font-bold text-xs uppercase tracking-widest ${e.flagship ? 'text-[#C5A028]' : 'text-[#002D5B] group-hover:translate-x-2'} transition-transform">
+                        Explore Venture <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function showDetail(id) {
+            const e = entities.find(item => item.id === id);
+            const focus = document.getElementById('focus-area');
+            const details = document.getElementById('details-view');
+
+            details.innerHTML = `
+                <div class="md:w-1/3">
+                    <div class="w-24 h-24 bg-[#002D5B] text-[#C5A028] rounded-3xl flex items-center justify-center shadow-xl mb-6">
+                        <i data-lucide="${e.icon}" class="w-12 h-12"></i>
+                    </div>
+                    <span class="cinzel text-xs font-bold text-[#C5A028] tracking-widest">${e.category}</span>
+                    <h2 class="cinzel text-3xl font-bold text-[#002D5B] mt-2 leading-tight">${e.name}</h2>
+                </div>
+                <div class="md:w-2/3 border-l-0 md:border-l border-slate-200 md:pl-10">
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">${e.longDesc}</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="${e.action.url}" target="${e.action.url.startsWith('http') ? '_blank' : '_self'}" 
+                           class="px-8 py-4 bg-[#002D5B] text-[#C5A028] cinzel font-bold rounded-xl shadow-lg hover:bg-[#C5A028] hover:text-[#002D5B] transition-all">
+                            ${e.action.label}
+                        </a>
+                        <button onclick="document.getElementById('focus-area').classList.add('hidden')" class="px-8 py-4 border-2 border-slate-200 text-slate-500 cinzel font-bold rounded-xl hover:bg-slate-50 transition-all">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            focus.classList.remove('hidden');
+            focus.scrollIntoView({ behavior: 'smooth' });
+            lucide.createIcons();
+        }
+
+        // AI Chat Logic
+        function toggleChat() {
+            document.getElementById('chat-window').classList.toggle('open');
+        }
+
+        function appendMsg(sender, text) {
+            const content = document.getElementById('chat-content');
+            const div = document.createElement('div');
+            div.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'}`;
+            div.innerHTML = `
+                <div class="${sender === 'user' ? 'bg-[#002D5B] text-white rounded-tr-none' : 'bg-white border border-slate-200 rounded-tl-none'} p-3 rounded-2xl text-sm shadow-sm max-w-[85%]">
+                    ${text}
+                </div>
+            `;
+            content.appendChild(div);
+            content.scrollTop = content.scrollHeight;
+        }
+
+        async function callGemini(query) {
+            const sys = `You are the Babbar Group AI Assistant. 
+            Chairman: Mr. Raj Babbar Raj. 
+            Slogan: "We prove by action." 
+            Core Values: Quality and Discipline.
+            Ventures: ${entities.map(e => e.name).join(', ')}.
+            Alliance Career Institute is flagship (${ALLIANCE_WEBSITE}).
+            Rajeshwari College PDF: ${RAJESHWARI_PDF}.
+            Contact: +91 9065919011, ranjunwd07@gmail.com.
+            Tone: Professional, regal, concise. If they ask for the college info, mention the PDF specifically.`;
+
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            // Exponential backoff logic
+            for (let i = 0, delay = 1000; i < 5; i++, delay *= 2) {
+                try {
+                    const res = await fetch(url, {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: query }] }],
+                            systemInstruction: { parts: [{ text: sys }] }
+                        })
+                    });
+                    if (!res.ok) throw new Error('API Error');
+                    const data = await res.json();
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text;
+                } catch (e) {
+                    if (i === 4) return "I'm experiencing a high volume of inquiries. Please contact our support team at +91 9065919011.";
+                    await new Promise(r => setTimeout(r, delay));
+                }
+            }
+        }
+
+        async function handleSend() {
+            const input = document.getElementById('user-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendMsg('user', text);
+            input.value = '';
+            
+            const typing = document.getElementById('typing');
+            typing.classList.remove('hidden');
+
+            const reply = await callGemini(text);
+            typing.classList.add('hidden');
+            appendMsg('ai', reply);
+        }
+
+        // Init
+        window.onload = () => {
+            renderGrid();
+            document.getElementById('user-input').addEventListener('keypress', e => {
+                if(e.key === 'Enter') handleSend();
+            });
+        };
+    </script>
+</body>
+</html>
+
